@@ -21,3 +21,14 @@
       ++ Trình duỵet phải bật JS, nếu không website sẽ hoạt động lỗi
       ++ Khó khăn trong việc SEO
       
+2/ Nuxt.Js
+      - Là một framework của Vue.Js
+      - Cấu trúc thư mục: 
+            + Không có Main.js và App.vue
+            + Nếu một trang k khai báo sử dụng layout nào thì default layout sẽ được dùng
+            + import thư viện trong thư mục plugin dùng bất cứ đâu trong dự án khác với trong vue import ở main.js, vue.use(thư viện)
+            + Tự động routing theo thư mục pages:
+               ++ index là route mặc định /
+               ++ dynamic routing bằng cách thêm dấu _ trước tên thư mục or tên file.vue
+            + Static : chứa các file tĩnh hay các landing page
+            + Store : create module không cần import như Vue, mỗi file là một module, hay ta có thể chia tách store thành từng file state, mutations,.. riêng biệt
