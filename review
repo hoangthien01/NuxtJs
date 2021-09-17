@@ -1,0 +1,23 @@
+1/ Serve Side Rendering và Client Side Rendering ( Single Page Application )
+- SSR: Bất cứ khi nào truy cập website, trình duyệt sẽ gửi request đến web serve, web serve sẽ nhận request, đọc dữ liệu từ database ( nếu cần ), sau đó sẽ render HTML, CSS 
+      trả về trình duyệt hiển thị cho người dùng.
+    + Ưu điểm: 
+      ++ Hỗ trợ tốt cho SEO.
+      ++ Load trang đầu tiên sẽ rất nhanh.
+      ++ Chạy được trên mọi trình duyệt, kể cả không có JS.
+      ++ Hỗ trợ tốt cho các static page.
+    + Nhược điểm:
+      ++ Chỉ cần 1 thay đổi nhỏ trên trang web ( chuyển route hay click button .. ) trang web sẽ được load lại từ đầu.
+      ++ Nặng cho serve phải xử lí quá nhiều logic.
+      ++ Trải nghiệm người dùng khong tốt.
+ 
+- CSR: Toàn bộ source của trang web sẽ được load ngay lần đầu tiên, khi chuyển trang trình duyệt sẽ gửi những yêu cầu get dữ liệu cần thiết, chỉ load lại những nội dung thay đổi.
+    + Ưu điểm: 
+      ++ Tăng trải nghiệm người dùng.
+      ++ Giảm tải áp lực lên server.
+      ++ Tách biệt FE và BE, giao tiếp thông qua API.
+      ++ Render HTML, CSS ở client, chỉ reload lại những nội dung thay đổi.
+    + Nhược điểm: 
+      ++ Trình duỵet phải bật JS, nếu không website sẽ hoạt động lỗi
+      ++ Khó khăn trong việc SEO
+      
